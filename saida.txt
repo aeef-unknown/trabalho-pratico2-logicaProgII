@@ -1,0 +1,5 @@
+1;Adilson Eduardo;16.00
+4;Afonso Pedro;16.00
+5;Antonio Armando Miranda;17.00
+2;Marcos David Antonio;18.00
+3;Silva Antonio Zangui;14.00
