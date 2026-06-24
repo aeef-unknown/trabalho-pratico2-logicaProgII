@@ -18,7 +18,7 @@ int total = 0;
 void mostrarEstudantes() {
 
     if(total == 0) {
-        printf("\n[×] Nenhum estudante carregado!\n");
+        printf("\n[x] Nenhum estudante carregado!\n");
         return;
     }
 
@@ -40,7 +40,7 @@ void lerFicheiro() {
     FILE *fp = fopen("estudantes.txt","r");
 
     if(fp == NULL) {
-        printf("\n[×] Erro ao abrir estudantes.txt\n");
+        printf("\n[x] Erro ao abrir estudantes.txt\n");
         return;
     }
 
@@ -207,7 +207,7 @@ void pesquisaLinearMatricula() {
         }
     }
 
-    printf("\n[×] Nao encontrado.\n");
+    printf("\n[x] Nao encontrado.\n");
 }
 
 /* Pesquisa Linear por Nome */
@@ -236,7 +236,7 @@ void pesquisaLinearNome() {
         }
     }
 
-    printf("\n[×] Nao encontrado.\n");
+    printf("\n[x] Nao encontrado.\n");
 }
 
 /* Pesquisa Binaria */
@@ -271,7 +271,7 @@ void pesquisaBinaria() {
             inicio = meio + 1;
     }
 
-    printf("\n[×] Nao encontrado.\n");
+    printf("\n[x] Nao encontrado.\n");
 }
 
 /* Gravar Texto */
@@ -281,7 +281,7 @@ void gravarTexto() {
     FILE *fp = fopen("saida.txt","w");
 
     if(fp == NULL) {
-        printf("\n[×] Erro ao gravar ficheiro.\n");
+        printf("\n[x] Erro ao gravar ficheiro.\n");
         return;
     }
 
@@ -305,7 +305,7 @@ void gravarBinario() {
     FILE *fp = fopen("saida.bin","wb");
 
     if(fp == NULL) {
-        printf("\n[×] Erro ao gravar ficheiro.\n");
+        printf("\n[x] Erro ao gravar ficheiro.\n");
         return;
     }
 
@@ -328,7 +328,7 @@ int main() {
     do {
 
         printf("\n=========================================");
-        printf("\n>> > SISTEMA DE GESTÃO DE ESTUDANTES < <<");
+        printf("\n>> > SISTEMA DE GESTAO DE ESTUDANTES < <<");
         printf("\n=========================================");
         printf("\n[1] > Ler ficheiro");
         printf("\n[2] > Mostrar estudantes");
